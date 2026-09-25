@@ -151,6 +151,7 @@ export default function App() {
   }, []);
 
   const [demoMode, setDemoMode] = useState<boolean>(false);
+  const [presentationMode, setPresentationMode] = useState<boolean>(false);
 
   const [tasks, setTasks] = useState<Task[]>(() => {
     try {
