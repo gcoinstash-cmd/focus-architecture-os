@@ -71,7 +71,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
             <h2 className="text-xl sm:text-2xl font-black tracking-tight text-white mb-2 font-mono">
               EXECUTIVE STUDIO // OPERATOR ACCESS
             </h2>
-            <p className="text-xs text-slate-400 max-w-md mb-8">
+            <p className="text-base text-zinc-200 leading-relaxed max-w-md mb-8">
               Frictionless demo gate active. Use the 1-click bypass button below or enter preset passkey <code className="text-[#C5A85C] bg-[#C5A85C]/10 px-2 py-0.5 rounded font-mono">focus2026</code>.
             </p>
 
@@ -95,7 +95,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
 
               <button
                 type="submit"
-                className="w-full bg-[#C5A85C] hover:bg-[#b0944e] text-black font-black uppercase tracking-wider py-3 rounded-xl text-xs transition-all duration-200 font-mono shadow-[0_0_20px_rgba(197,168,92,0.3)] active:scale-95 cursor-pointer"
+                className="w-full bg-[#C5A85C] hover:bg-[#b0944e] text-black font-black uppercase tracking-wider py-3 rounded-xl text-base font-semibold min-h-[44px] transition-all duration-200 font-mono shadow-[0_0_20px_rgba(197,168,92,0.3)] active:scale-95 cursor-pointer"
               >
                 Authenticate Executive
               </button>
@@ -103,7 +103,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <button
                 type="button"
                 onClick={handleAutoFill}
-                className="w-full bg-white/5 hover:bg-white/10 text-[#C5A85C] border border-[#C5A85C]/30 hover:border-[#C5A85C]/60 font-mono text-xs uppercase tracking-wider py-2.5 rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full bg-white/5 hover:bg-white/10 text-[#C5A85C] border border-[#C5A85C]/30 hover:border-[#C5A85C]/60 font-mono text-base font-semibold min-h-[44px] uppercase tracking-wider py-2.5 rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Sparkles size={14} />
                 <span>1-Click Auto-Fill Demo Passkey (`focus2026`)</span>
@@ -123,15 +123,15 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="bg-black/60 border border-white/10 p-4 rounded-xl space-y-2">
-                <span className="text-slate-400 block text-[10px]">SOVEREIGN STATE STORAGE</span>
+                <span className="text-slate-400 block text-xs font-semibold tracking-wider">SOVEREIGN STATE STORAGE</span>
                 <span className="text-white font-bold block text-sm">PostgreSQL 15 (Supabase Ready)</span>
-                <p className="text-[11px] text-slate-400 font-sans">Turnkey SQL schema packaged with tasks, loops, and habit telemetry.</p>
+                <p className="text-xs font-semibold text-slate-400 font-sans">Turnkey SQL schema packaged with tasks, loops, and habit telemetry.</p>
               </div>
 
               <div className="bg-black/60 border border-white/10 p-4 rounded-xl space-y-2">
-                <span className="text-slate-400 block text-[10px]">SECURITY & ACCESS</span>
+                <span className="text-slate-400 block text-xs font-semibold tracking-wider">SECURITY & ACCESS</span>
                 <span className="text-emerald-400 font-bold block text-sm">RLS Enforced (Row Level Security)</span>
-                <p className="text-[11px] text-slate-400 font-sans">Full sovereign isolation for executive workspaces.</p>
+                <p className="text-xs font-semibold text-slate-400 font-sans">Full sovereign isolation for executive workspaces.</p>
               </div>
             </div>
           </div>
